@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     fun onButtonTapped(view: View?) {
         val intent = Intent(this, MainActivity2::class.java)
+        intent.putExtra("BUTTON", view?.id)
         startActivity(intent)
     }
 
